@@ -1,13 +1,11 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { container } from './inside.module.css';
 
-const Inside = () => {
+const Inside = ({ children }) => {
 
   return (
-    <Container>
-      <h1>Inside</h1>
-    </Container>
+    <div className={container}>{children}</div>
   );
 };
 

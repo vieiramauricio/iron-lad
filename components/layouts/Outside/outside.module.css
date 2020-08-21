@@ -1,0 +1,19 @@
+.container {  
+  width: 90%;
+  max-width: 1200px;
+  margin: 64px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row {
+  /* background: #7159c1; */
+  width: 45%;
+  max-width: 100%;
+}
+
+.illustration {
+  max-width: 100%;
+  width: 100%;
+}

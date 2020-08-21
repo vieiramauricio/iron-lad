@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Inside from '../components/layouts/Inside';
 
 const Dashboard = () => {
   return (
@@ -6,7 +7,9 @@ const Dashboard = () => {
       <Head>
         <title>Dashboard | Iron Lad</title>
       </Head>
-      <h1>Dashboard</h1>
+      <Inside>
+        <h1>Dashboard</h1>
+      </Inside>
     </>
   )
 }
