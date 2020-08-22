@@ -5,7 +5,8 @@ import {
   container, 
   menuWrapper, 
   logo,
-  icon 
+  icon, 
+  list
 } from './navbar.module.css';
 
 import Drawer from '@material-ui/core/Drawer';
@@ -25,7 +26,9 @@ const Navbar = () => {
         <div className={menuWrapper}>
           <Menu onClick={toggleMenu} className={icon}/>
           <Drawer anchor="left" open={menu} onClose={toggleMenu}>
-            <h1>kkkk</h1>
+            <ul className={list}>
+
+            </ul>
           </Drawer>
 
           <span className={logo}>Iron Lad</span>
