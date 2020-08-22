@@ -1,0 +1,27 @@
+.navbar {
+  background: #004ABE;
+}
+.container {
+  max-width: 1170px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.icon {
+  cursor: pointer;
+  color: #f8f8f8;
+}
+.menuWrapper {
+  display: flex;
+  align-items: center;
+  color: #f8f8f8;
+}
+
+.logo {
+  display: block;
+  padding-left: 10px;
+  font-size: 21px;
+  font-weight: bold;
+}
