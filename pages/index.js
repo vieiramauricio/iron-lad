@@ -14,7 +14,18 @@ import Button from '../components/Button';
 import { Title } from '../components/Titles';
 import { CallToPage } from '../components/Messages';
 
+import { useAuth } from '../context/Auth';
+import { login, logout } from '../context/Auth/actions';
+
 const Login = () => {
+
+  const { state, dispatch } = useAuth();
+
+  const handleForm = () => {
+    console.log('teste')
+    login(dispatch, 'HYUSA289WDGAUIJAH1113223SJKSJAKJ')
+  };
+
   return (
     <>
       <Head>
@@ -48,7 +59,7 @@ const Login = () => {
 
             </Box>
             <Box mt={1}>
-              <Button>
+              <Button onClick={handleForm}>
                 Entrar
               </Button>
             </Box>

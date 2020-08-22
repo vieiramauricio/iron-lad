@@ -1,0 +1,114 @@
+{
+  "login": {
+    "token": "yRQYnWzskCZUxPwaQupWkiUzKELZ49eM7oWxAQK_ZXw"
+  },
+  "users": [
+    {
+      "email": "vieiramauricio@bol.com",
+      "user": "vieiramauricio",
+      "password": "example123"
+    }
+  ],
+  "dashboard": {
+    "produtos": {
+      "aprovados": 1901974,
+      "anuncios": 934456,
+      "processamento": 0,
+      "erro_match": 23118,
+      "aguardando_validacao": 98494,
+      "reprovados": 372506,
+      "categorizar": 452538,
+      "inativos": 597572
+    },
+    "vendas": {
+      "incluidas_hoje": 5333730,
+      "aprovadas_hoje": 4005434,
+      "incluidas": 28380351056,
+      "aprovadas": 2143815978,
+      "canceladas": 42841428,
+      "taxa_aprovacao": 78,
+      "ticket_medio": 51545,
+      "comissao": 16,
+      "aprovadas_periodo_anterior": 22449240031,
+      "pedisos_aprovados": 41591
+    }
+  },
+  "pedidos": [
+    {
+      "id": 793167,
+      "nome": "The Binding of Isaac: Rebirth",
+      "cliente": "Mauricio",
+      "Seller": "Steam",
+      "valor": 24030,
+      "status": "Novo",
+      "detalhes": {
+        "resumo": {
+          "numero_pedido": 1322247635,
+          "subtotal": 19497,
+          "frete": 4533,
+          "comissao": 3965,
+          "total": 24030,
+          "Pagamento": "Visa",
+          "Satisfação": 0
+        },
+        "itens": [
+          {
+            "id": 137282,
+            "sku_seller": 547849753,
+            "nome": "The Binding of Isaac: Rebirth ",
+            "quantidade": 3,
+            "valor_total": 6499
+          }
+        ],
+        "envio": {
+          "cliente": {
+            "nome": "Mauricio",
+            "documento": 21891389,
+            "telefone": 33791329,
+            "endereço": "Rua Leonardo Guembaroski, 3379"
+          },
+          "entrega": {
+            "nome": "Mauricio",
+            "documento": 21891389,
+            "telefone": 33791329,
+            "endereço": "Rua Leonardo Guembaroski, 3379"
+          }
+        }
+      }
+    }
+  ],
+  "produtos": [
+    {
+      "id": 3213112,
+      "seller": "Steam",
+      "sku_seller": 2839246298,
+      "nome": "The Binding of Isaac: Rebirth",
+      "estoque": 92,
+      "preco_de": 3490,
+      "preco_por": 6510,
+      "status": "Ativo",
+      "detalhes": {
+        "informacoes": {
+          "titulo": "The Binding of Isaac: Rebirth",
+          "marca": "Steam",
+          "categoria": "502 - Eletrônicos",
+          "quantidade": 100,
+          "sku": 3479832,
+          "ean": 832091238,
+          "tabela_frete": "Tabela MM",
+          "descricao": "The Binding of Isaac: Rebirth é um jogo eletrônico independente do gênero roguelike desenvolvido por Edmund McMillen e publicado pela Nicalis, lançado originalmente para Microsoft Windows, OS X, Linux, PlayStation 4 e PlayStation Vita em 2014",
+        },
+        "embalagem": {
+          "altura": 60,
+          "largura": 80,
+          "profundidade": 42,
+          "peso": 7
+        },
+        "imagens": [
+          "https://steamcdn-a.akamaihd.net/steam/apps/322660/capsule_616x353.jpg?t=1595298829",
+          "https://http2.mlstatic.com/jogo-the-binding-of-isaac-rebirth-pc-envio-digital-D_NQ_NP_687698-MLB27505705756_062018-F.jpg"
+        ]
+      }
+    }
+  ]
+}
