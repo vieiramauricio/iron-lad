@@ -1,0 +1,16 @@
+.title, .subtitle {
+  color: #1F1F1F;
+  font-weight: bold;
+  line-height: 115%;
+}
+
+.title > span, .subtitle > span {
+  color: #FF8500;
+}
+.title {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+.subtitle {
+  font-size: 32px;
+}

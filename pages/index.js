@@ -1,19 +1,69 @@
 import Head from 'next/head';
+import Link from 'next/link';
+
+import {
+  Box,
+  TextField,
+  FormControl
+} from '@material-ui/core';
+
+import { Slide } from "react-awesome-reveal";
+
 import Outside from '../components/layouts/Outside';
 import Button from '../components/Button';
+import { Title } from '../components/Titles';
+import { CallToPage } from '../components/Messages';
 
 const Login = () => {
   return (
-    <Outside>
+    <>
       <Head>
         <title>Login | Iron Lad</title>
       </Head>
-      <h1>Login</h1>
+      <Outside>
+        <Slide direction="left">
+          <Box>
+            <Box>
+              <Title>
+                Entre agora no Portal <span>Marketplace</span>
+              </Title>
+            </Box>
+            <Box mt={2}>
+              <FormControl fullWidth>
+                <TextField
+                  type="text"
+                  label="Usuário"
+                  variant="outlined"
+                />
+              </FormControl>
+            </Box>
+            <Box mt={1}>
+              <FormControl fullWidth>
+                <TextField
+                  type="password"
+                  label="Senha"
+                  variant="outlined"
+                />
+              </FormControl>
 
-      <Button color="primary">
-        Deuses
-      </Button>
-    </Outside>
+            </Box>
+            <Box mt={1}>
+              <Button>
+                Entrar
+              </Button>
+            </Box>
+          </Box>
+          <Box>
+            <CallToPage>
+              Não tem cadastro ainda?
+            <Link href="/register">
+                <span> clique aqui!</span>
+              </Link>
+            </CallToPage>
+          </Box>
+        </Slide>
+      </Outside>
+    </>
   )
 }
 

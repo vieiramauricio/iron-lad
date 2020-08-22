@@ -1,0 +1,14 @@
+.messagecall {
+  display: block;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.messagecall > span {
+  color: #FF8500;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.messagecall > span:hover {
+  color: #ED8221;
+}
