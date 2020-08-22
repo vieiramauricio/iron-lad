@@ -1,16 +1,16 @@
- import React from 'react';
+import React from 'react';
 import { CircularProgress } from '@material-ui/core';
-import { btn } from './button.module.css';
+import ButtonStyled from './styles';
 
-const Button = ({loading, children, handle ,...props}) => {
+const Button = ({children, loading, handle, size,...props}) => {
   return (
-    <button className={btn} {...props} onClick={handle}>
+    <ButtonStyled {...props} onClick={handle}>
       {loading ? (
         <CircularProgress size="10px" color="inherit" />
       ) : (
         children
       )}
-    </button>
+    </ButtonStyled>
   );
 };
 
