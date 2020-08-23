@@ -28,7 +28,7 @@ const Navbar = () => {
     },
     {
       name: 'Produtos',
-      url: '/products'
+      url: '/produtos'
     },
     {
       name: 'Pedidos',

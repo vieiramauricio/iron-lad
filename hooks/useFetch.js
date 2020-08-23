@@ -1,16 +1,8 @@
 import api from '../services/api';
-import useSWR from 'swr'
 
-const useFetchSWR = (url) => {
-
-  const fetcher = async () => {
-    const res = await api.get(url);
-    return res.data
-  };
-
-  const { data, error } = useSWR(url, fetcher);
-
-  return { data, error}
+const useFetch = async (url) => {
+  const res = await api.get(url);
+  return res.data
 }
 
-export default useFetchSWR;
+export default useFetch;

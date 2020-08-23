@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import {
   Box,
@@ -20,10 +21,11 @@ import { login, logout } from '../context/Auth/actions';
 const Login = () => {
 
   const { state, dispatch } = useAuth();
+  const router = useRouter();
 
   const handleForm = () => {
-    console.log('teste')
-    login(dispatch, 'HYUSA289WDGAUIJAH1113223SJKSJAKJ')
+    login(dispatch, 'HYUSA289WDGAUIJAH1113223SJKSJAKJ');
+    router.push('/dashboard');
   };
 
   return (
@@ -72,9 +74,6 @@ const Login = () => {
               </Link>
             </CallToPage>
           </Box>
-              <Link href="/dashboard">
-                <span>dashboard</span>
-              </Link>
         </Slide>
       </Outside>
     </>
