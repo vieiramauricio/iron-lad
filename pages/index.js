@@ -67,11 +67,14 @@ const Login = () => {
           <Box>
             <CallToPage>
               Não tem cadastro ainda?
-            <Link href="/register">
+              <Link href="/register">
                 <span> clique aqui!</span>
               </Link>
             </CallToPage>
           </Box>
+              <Link href="/dashboard">
+                <span>dashboard</span>
+              </Link>
         </Slide>
       </Outside>
     </>

@@ -7,11 +7,20 @@ const AuthContext = createContext();
 const AuthProvider = ({ children }) => {
 
   const [state, dispatch] = useReducer(AuthReducer, '', () => {
-    return { token: Cookie.get('token') };
+
+    let localData = {};
+
+    const token = Cookie.get('token');
+
+    if(token){
+      localData = { token: token };
+    }
+    return localData;
   });
 
   useEffect(() => {
-    Cookie.set('token', state.token)
+    if(state.token)
+      Cookie.set('token', state.token)
   }, [state]);
 
   return (

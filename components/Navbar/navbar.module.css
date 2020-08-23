@@ -26,5 +26,18 @@
   font-weight: bold;
 }
 .list {
-  
+  padding: 32px 0;
+}
+.itemList {
+  display: block;
+  width: 250px;
+  padding: 16px 24px;
+  text-decoration: none;
+  transition: all .3s ease-in;
+  color: unset;
+  font-weight: bold;
+  border-bottom: 1px solid #dddddd;
+}
+.itemList:hover{
+  background: #dddddd;
 }

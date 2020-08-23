@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 import { 
   navbar, 
@@ -6,7 +7,8 @@ import {
   menuWrapper, 
   logo,
   icon, 
-  list
+  list,
+  itemList
 } from './navbar.module.css';
 
 import Drawer from '@material-ui/core/Drawer';
@@ -19,6 +21,21 @@ const Navbar = () => {
     setMenu(!menu);
   };
 
+  const menuList = [
+    {
+      name: 'Dashboard',
+      url: '/dashboard'
+    },
+    {
+      name: 'Produtos',
+      url: '/products'
+    },
+    {
+      name: 'Pedidos',
+      url: '/pedidos'
+    }
+  ]
+
   return (
     <nav className={navbar}>
       <div className={container}>
@@ -27,7 +44,15 @@ const Navbar = () => {
           <Menu onClick={toggleMenu} className={icon}/>
           <Drawer anchor="left" open={menu} onClose={toggleMenu}>
             <ul className={list}>
-
+              { 
+                menuList.map((item, index) => (
+                  <Link href={item.url} key={index}>
+                    <a className={itemList}>
+                      {item.name}
+                    </a>
+                  </Link>
+                )) 
+              }
             </ul>
           </Drawer>
 
