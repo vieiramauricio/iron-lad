@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 64px 0;
+  flex-wrap: wrap;
+}
+.row {
+  width: 48%;
+  background: #FAFAFA;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);  border-radius: 8px;
+  padding: 16px 24px;
+}
+
+.row__title {
+  font-weight: bold;
+  font-size: 21px;
+}

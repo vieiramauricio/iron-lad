@@ -1,14 +1,4 @@
 {
-  "login": {
-    "token": "yRQYnWzskCZUxPwaQupWkiUzKELZ49eM7oWxAQK_ZXw"
-  },
-  "users": [
-    {
-      "email": "vieiramauricio@bol.com",
-      "user": "vieiramauricio",
-      "password": "example123"
-    }
-  ],
   "dashboard": {
     "produtos": {
       "aprovados": 1901974,
