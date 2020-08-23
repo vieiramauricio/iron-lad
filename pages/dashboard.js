@@ -25,8 +25,6 @@ const Dashboard = () => {
 
   const { state } = useAuth();
   const [signed, setSigned] = useState(false);
-  const [products, setProducts] = useState([]);
-  const [vendas, setVendas] = useState([]);
   const [rows, setRows] = useState([]);
   const router = useRouter();
 
@@ -34,9 +32,6 @@ const Dashboard = () => {
     const res = await axios.get('/api/dashboard');
 
     const { produtos, vendas } = res.data;
-
-    setProducts(produtos);
-    setVendas(vendas);
 
     setRows([
       createData('Aprovados', produtos.aprovados),
